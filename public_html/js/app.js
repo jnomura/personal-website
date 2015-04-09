@@ -9,11 +9,11 @@ var main = function(){
     var win = $(this);
     if (win.width() < 650) {
         $('.title').css("font-size","15px");
-        $('#navbar-name').css("max-width","290px");
+        $('.center').css("width","290px");
     }
     else {
         $('.title').css("font-size","24px");
-        $('#navbar-name').css("max-width","400px");
+        $('.center').css("width","400px");
     }
     });
     
@@ -21,12 +21,12 @@ var main = function(){
     var win = $(this);
     if (win.width() < 650) {
         $('.title').css("font-size","15px");
-        $('#navbar-name').css("max-width","290px");
+        $('.center').css("width","290px");
         $('#nav').css("margin-top","40%");
     }
     else {
         $('.title').css("font-size","24px");
-        $('#navbar-name').css("max-width","400px");
+        $('.center').css("width","400px");
         $('#nav').css("margin-top","25%");
     }
     });
