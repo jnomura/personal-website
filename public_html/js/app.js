@@ -8,15 +8,18 @@ var main = function(){
     $(window).ready(function(){
     var win = $(this);
     if (win.width() < 650) {
-        $('.title').css("font-size","4.5vw");
+        $('.title').css({"font-size":"4.5vw","margin-top":"10px"});
         $('h3').css("font-size","4.5vw");
         $('.navbar-center').css("width","290px");
         $('.center').css("width","290px");
         $('#email-link').css("font-size","4.5vw");
         $('.navbar-name-left').css({"width":"190px","margin-top":"-4px"});
     }
+    else if (win.width() < 900) {
+        $('.title').css("margin-top","70px");
+    }
     else {
-        $('.title').css("font-size","24px");
+        $('.title').css({"font-size":"24px","margin-top":"10px"});
         $('h3').css("font-size","16px");
         $('.navbar-center').css("width","400px");
         $('.center').css("width","400px");
@@ -28,7 +31,7 @@ var main = function(){
     $(window).resize(function(){
     var win = $(this);
     if (win.width() < 650) {
-        $('.title').css("font-size","4.5vw");
+        $('.title').css({"font-size":"4.5vw","margin-top":"10px"});
         $('h3').css("font-size","4.5vw");
         $('.navbar-center').css("width","290px");
         $('.center').css("width","290px");
@@ -36,8 +39,11 @@ var main = function(){
         $('#email-link').css("font-size","4.5vw");
         $('.navbar-name-left').css({"width":"190px","margin-top":"-4px"});
     }
+    else if (win.width() < 900) {
+        $('.title').css("margin-top","70px");
+    }
     else {
-        $('.title').css("font-size","24px");
+        $('.title').css({"font-size":"24px","margin-top":"10px"});
         $('h3').css("font-size","16px");
         $('.navbar-center').css("width","400px");
         $('.center').css("width","400px");
