@@ -57,7 +57,9 @@ h3 {
 .browser {
     font-size: 20px;
     color: black;
-    font-weight: bold;
+    text-align: center;
+    background-color: white;
+    border-bottom: 2px solid #87aaa6;
 }
 
 /* portfolio page */
@@ -130,6 +132,10 @@ h5 {
 
 .contact-page {
     padding-top: 120px;
+}
+
+#email-link {
+    font-size: 13px;
 }
 
 #contact-background {
