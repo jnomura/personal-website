@@ -1,0 +1,33 @@
+@import url("global.css");
+
+.letter span {
+	display: inline-block;
+	font-weight: 900;
+	line-height: 1;
+	position: relative;
+	color: rgb(23, 120, 139);
+	z-index: 1;
+	text-shadow: 1px 4px 6px #fff, 0 0 0 #eee, 1px 4px 6px #fff;
+}
+.letter span:before,
+.letter span:after {
+	position: absolute;
+	content: attr(data-letter);
+	line-height: inherit;
+	top: 0;
+	left: 0;
+}
+.letter span:before {
+	color: #72adb9;
+  z-index: 2;
+  text-shadow: none;
+}
+.letter span:after {
+	color: #f8fbfb;
+	opacity: 0.92;
+	z-index: 3;
+	text-shadow: 1px 1px #66a6b3;
+}
+.blur {
+	color: #66a6b3;
+}
