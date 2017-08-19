@@ -73,17 +73,34 @@
                 </div>
             </nav>
         </div>
-        <div class="container" id="container-main-content">
+        <div class="container" id="container-skills">
             <div class="row d-flex justify-content-center">
-                <div class="col-3">
+                <div class="col-4">
                         <canvas id="chart-languages" width="200" height="200"></canvas>                        
                 </div>
-                <div class="col-3">
+                <div class="col-4">
                         <canvas id="chart-ides" width="200" height="200"></canvas>                        
                 </div>
-                <div class="col-3">
+                <div class="col-4">
                         <canvas id="chart-libraries" width="200" height="200"></canvas>                        
                 </div>
+            </div>
+        </div>
+        <hr class="hr-container-separater">
+        <div class="container" id="container-about">
+            <div class="row d-flex justify-content-center">
+            </div>
+        </div>
+        <div class="container" id="container-portfolio">
+            <div class="row d-flex justify-content-center">
+            </div>
+        </div>
+        <div class="container" id="container-resume">
+            <div class="row d-flex justify-content-center">
+            </div>
+        </div>
+        <div class="container" id="container-contact">
+            <div class="row d-flex justify-content-center">
             </div>
         </div>
         <!-- jQuery -->
@@ -105,18 +122,31 @@
             var ctxLibraries = $("#chart-libraries");
             data = {
                 datasets: [{
-                    data: [10, 20]
+                    data: [9, 9, 2, 9, 8, 7, 6, 8, 2] 
                 }],
-
                 // These labels appear in the legend and in the tooltips when hovering different arcs
                 labels: [
-                    'Red',
-                    'Yellow'               
+                    'CSS',
+                    'Less',
+                    'SASS',
+                    'HTML',
+                    'JavaScript',
+                    'PHP',
+                    'SQL',
+                    'Java (Android SDK)',
+                    'C#'               
                 ]
             };
+            options = {
+                legend: {
+                    display: true,
+                    position: 'bottom'
+                }
+            }
             var chartLanguages = new Chart(ctxLanguages, {
                 type: 'polarArea',
-                data: data
+                data: data,
+                options: options
             });
             var chartIdes = new Chart(ctxIdes, {
                 type: 'polarArea',

@@ -105,9 +105,32 @@
 }
 
 /* Main Content */
-#container-main-content {
+/* Skills */
+#container-skills {
 	margin-top: 60px;
 }
+/* About */
+#container-about {
+
+}
+/* Portfolio */
+#container-portfolio {
+
+}
+/* Resume */
+#container-resume {
+
+}
+/* Contact */
+#container-contact {
+
+}
+.hr-container-separater {
+	border-top: 26px solid rgba(9, 89, 105, 0.2);
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+
 
 .blur {
    color: transparent;
