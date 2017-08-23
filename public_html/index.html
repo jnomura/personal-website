@@ -76,14 +76,71 @@
         <div class="container" id="container-skills">
             <div class="row d-flex justify-content-center">
                 <div class="col-4">
-                        <canvas id="chart-languages" width="200" height="200"></canvas>                        
+                    <h2 class="chart-title">Languages</h2>                        
+                    <canvas id="chart-languages" width="200" height="200"></canvas>                        
                 </div>
-                <div class="col-4">
-                        <canvas id="chart-ides" width="200" height="200"></canvas>                        
+                <div class="col-3">
+                    <h2 class="chart-title">Design</h2>
+                    <canvas id="chart-design" width="200" height="200"></canvas>                        
                 </div>
-                <div class="col-4">
-                        <canvas id="chart-libraries" width="200" height="200"></canvas>                        
+                <div class="col-3">
+                    <h2 class="chart-title">CMS</h2>                        
+                    <canvas id="chart-cms" width="200" height="200"></canvas>                        
                 </div>
+            </div>
+            <!-- <div class="row d-flex justify-content-center">
+                <h2 id="bar-title">Frameworks + Libraries</h2>
+            </div> -->
+            <!-- <div class="row d-flex justify-content-center" id="bar-libraries">
+                <div class="col-2">
+                    <div id="bar-jquery"></div>
+                    <h2 class="bar-title">jQuery</h2>
+                </div>
+                <div class="col-2">
+                    <div id="bar-bootstrap"></div>      
+                    <h2 class="bar-title">Bootstrap</h2>                 
+                </div>
+            </div> -->
+            <div id="other-technologies">
+                <section class="d-flex flex-row">
+                    <h3 class="p-2">Frameworks + Libraries </h3>
+                    <ul class="p-2">
+                        <li>jQuery</li>
+                        <li>Bootstrap</li>
+                    </ul>
+                </section>
+                <section class="d-flex flex-row">
+                    <h3 class="p-2">Version Control </h3>
+                    <ul class="p-2">
+                        <li>Git</li>
+                        <li>GitLab</li>
+                        <li>GitHub</li>
+                        <li>SourceTree</li>
+                    </ul>
+                </section>
+                <section class="d-flex flex-row">
+                    <h3 class="p-2">Databases </h3>
+                    <ul class="p-2">
+                        <li>MySQL</li>
+                        <li>SQLite</li>
+                        <li>Access</li>
+                    </ul>
+                </section>
+                <section class="d-flex flex-row">
+                    <h3 class="p-2">IDEs </h3>
+                    <ul class="p-2">
+                        <li>Android Studio</li>
+                        <li>Visual Studio</li>
+                        <li>Webstorm</li>
+                    </ul>
+                </section>
+                <section class="d-flex flex-row">
+                    <h3 class="p-2">APIs </h3>
+                    <ul class="p-2">
+                        <li>Google Maps APIs</li>
+                        <li>Google Transit APIs</li>
+                    </ul>
+                </section>
             </div>
         </div>
         <hr class="hr-container-separater">
@@ -113,49 +170,12 @@
         <script src="vendor/waypoints/js/jquery.waypoints.min.js"></script>
         <!-- CHART JS -->
         <script src="vendor/chart/js/Chart.js"></script>
+        <!-- PROGRESSBAR JS -->
+        <script src="vendor/progressbar/js/progressbar.js"></script>
         <!--[if gt IE 9]><!-->
             <script src="js/custom.js"></script>
+            <script src="js/custom-chart.js"></script>
+            <script src="js/custom-progressbar.js"></script>
         <!--<![endif]-->
-        <script>
-            var ctxLanguages = $("#chart-languages");
-            var ctxIdes = $("#chart-ides");
-            var ctxLibraries = $("#chart-libraries");
-            data = {
-                datasets: [{
-                    data: [9, 9, 2, 9, 8, 7, 6, 8, 2] 
-                }],
-                // These labels appear in the legend and in the tooltips when hovering different arcs
-                labels: [
-                    'CSS',
-                    'Less',
-                    'SASS',
-                    'HTML',
-                    'JavaScript',
-                    'PHP',
-                    'SQL',
-                    'Java (Android SDK)',
-                    'C#'               
-                ]
-            };
-            options = {
-                legend: {
-                    display: true,
-                    position: 'bottom'
-                }
-            }
-            var chartLanguages = new Chart(ctxLanguages, {
-                type: 'polarArea',
-                data: data,
-                options: options
-            });
-            var chartIdes = new Chart(ctxIdes, {
-                type: 'polarArea',
-                data: data
-            });
-            var chartLibraries = new Chart(ctxLibraries, {
-                type: 'polarArea',
-                data: data
-            });
-        </script>
     </body>
 </html>

@@ -101,13 +101,57 @@
 .nav-link {
 	padding-top: 0;
 	padding-bottom: 0;
-	text-transform: uppercase;
+	text-transform: capitalize;
 }
 
 /* Main Content */
 /* Skills */
 #container-skills {
 	margin-top: 60px;
+}
+.chart-title {
+	text-align: center;
+	font-size: 14px;
+	color: rgba(0, 0, 0, 0.5);
+	position: relative;
+    top: 47px;
+    /*border-bottom: 1px solid rgba(9, 89, 105, 0.2);*/
+    padding-bottom: 9px;
+}
+#bar-title {
+	text-align: center;
+	font-size: 14px;
+	color: rgba(0, 0, 0, 0.5);
+	/* position: relative;
+    top: 47px; */
+    border-bottom: 1px solid rgba(9, 89, 105, 0.2);
+	padding-bottom: 9px;
+	width: 500px;
+}
+.bar-title {
+	text-align: center;
+	font-size: 14px;
+	color: rgba(0, 0, 0, 0.5);
+	margin-top: 10px;
+}
+#bar-jquery,
+#bar-bootstrap,
+#bar-responsive-design {
+	width: 150px;
+	height: 150px;
+	position: relative;
+}
+#other-technologies h3 {
+}
+#other-technologies ul {
+	list-style-type: none;
+	margin: 0 0 0 15px;
+	padding-top: 15px !important;
+	overflow: hidden;
+}
+#other-technologies li {
+	display: inline;
+	padding-right: 15px;
 }
 /* About */
 #container-about {

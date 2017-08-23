@@ -10737,6 +10737,7 @@ module.exports = function(Chart) {
 						width = boxWidth + (fontSize / 2) + textWidth,
 						x = cursor.x,
 						y = cursor.y;
+						y += (ctx.canvas.clientHeight - (itemHeight * me.legendItems.length)) / 2;
 
 					if (isHorizontal) {
 						if (x + width >= legendWidth) {
