@@ -74,11 +74,56 @@
             </nav>
         </div>
         <div class="container" id="container-skills">
-            <div class="row d-flex justify-content-center">
-                <div class="col-4">
-                    <h2 class="chart-title">Languages</h2>                        
-                    <canvas id="chart-languages" width="200" height="200"></canvas>                        
+            <!--<div class="row d-flex justify-content-center">
+                <h2 id="bar-title">Languages, Frameworks + Libraries</h2>
+            </div>-->
+            <div class="row d-flex justify-content-center align-items-end" id="bar-libraries">
+                <div class="col-1">
+                    <div class="mx-auto" id="bar-css"></div>
+                    <h2 class="bar-title">CSS3</h2>
                 </div>
+                <div class="col-1">
+                    <div class="mx-auto" id="bar-less"></div>      
+                    <h2 class="bar-title">Less</h2>                 
+                </div>
+                <div class="col-1">
+                    <div class="mx-auto" id="bar-sass"></div>
+                    <h2 class="bar-title">Sass</h2>
+                </div>
+                <div class="col-1">
+                    <div class="mx-auto" id="bar-html"></div>      
+                    <h2 class="bar-title">HTML5</h2>                 
+                </div>
+                <div class="col-1">
+                    <div class="mx-auto" id="bar-js"></div>
+                    <h2 class="bar-title">JavaScript</h2>
+                </div>
+                <div class="col-1">
+                    <div class="mx-auto" id="bar-php"></div>      
+                    <h2 class="bar-title">PHP</h2>                 
+                </div>
+                <div class="col-1">
+                    <div class="mx-auto" id="bar-sql"></div>
+                    <h2 class="bar-title">SQL</h2>
+                </div>
+                <div class="col-1">
+                    <div class="mx-auto" id="bar-java"></div>      
+                    <h2 class="bar-title">Android SDK</h2>                 
+                </div>
+                <div class="col-1">
+                    <div class="mx-auto" id="bar-c"></div>
+                    <h2 class="bar-title">C#</h2>
+                </div>
+                <div class="col-1">
+                    <div class="mx-auto" id="bar-jquery"></div>
+                    <h2 class="bar-title">jQuery</h2>
+                </div>
+                <div class="col-1">
+                    <div class="mx-auto" id="bar-bootstrap"></div>      
+                    <h2 class="bar-title">Bootstrap</h2>                 
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center align-items-start">
                 <div class="col-3">
                     <h2 class="chart-title">Design</h2>
                     <canvas id="chart-design" width="200" height="200"></canvas>                        
@@ -87,28 +132,12 @@
                     <h2 class="chart-title">CMS</h2>                        
                     <canvas id="chart-cms" width="200" height="200"></canvas>                        
                 </div>
+                <div class="col-3">
+                    <h2 class="chart-title">Databases</h2>                        
+                    <canvas id="chart-databases" width="200" height="200"></canvas>                        
+                </div>
             </div>
-            <!-- <div class="row d-flex justify-content-center">
-                <h2 id="bar-title">Frameworks + Libraries</h2>
-            </div> -->
-            <!-- <div class="row d-flex justify-content-center" id="bar-libraries">
-                <div class="col-2">
-                    <div id="bar-jquery"></div>
-                    <h2 class="bar-title">jQuery</h2>
-                </div>
-                <div class="col-2">
-                    <div id="bar-bootstrap"></div>      
-                    <h2 class="bar-title">Bootstrap</h2>                 
-                </div>
-            </div> -->
             <div id="other-technologies">
-                <section class="d-flex flex-row">
-                    <h3 class="p-2">Frameworks + Libraries </h3>
-                    <ul class="p-2">
-                        <li>jQuery</li>
-                        <li>Bootstrap</li>
-                    </ul>
-                </section>
                 <section class="d-flex flex-row">
                     <h3 class="p-2">Version Control </h3>
                     <ul class="p-2">
@@ -116,14 +145,6 @@
                         <li>GitLab</li>
                         <li>GitHub</li>
                         <li>SourceTree</li>
-                    </ul>
-                </section>
-                <section class="d-flex flex-row">
-                    <h3 class="p-2">Databases </h3>
-                    <ul class="p-2">
-                        <li>MySQL</li>
-                        <li>SQLite</li>
-                        <li>Access</li>
                     </ul>
                 </section>
                 <section class="d-flex flex-row">

@@ -130,16 +130,26 @@
 }
 .bar-title {
 	text-align: center;
-	font-size: 14px;
+	font-size: 11px;
 	color: rgba(0, 0, 0, 0.5);
 	margin-top: 10px;
 }
+#bar-css,
+#bar-less,
+#bar-sass,
+#bar-html,
+#bar-js,
+#bar-php,
+#bar-sql,
+#bar-java,
+#bar-c,
+#bar-misc,
 #bar-jquery,
-#bar-bootstrap,
-#bar-responsive-design {
-	width: 150px;
-	height: 150px;
+#bar-bootstrap {
 	position: relative;
+}
+#bar-libraries .bar-title {
+	margin-bottom: 40px;
 }
 #other-technologies h3 {
 }
