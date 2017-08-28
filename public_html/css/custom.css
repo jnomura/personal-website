@@ -85,8 +85,9 @@
 
 /* Navigation */
 #container-navbar {
-	border-top: 1px solid rgba(9, 89, 105, 0.2);
-	border-bottom: 1px solid rgba(9, 89, 105, 0.2);
+	/*border-top: 1px solid rgba(9, 89, 105, 0.2);
+	border-bottom: 1px solid rgba(9, 89, 105, 0.2);*/
+	background-color: rgba(9, 89, 105, 0.2);
 }
 .navbar {
 	padding-top: 0;
@@ -101,13 +102,118 @@
 .nav-link {
 	padding-top: 0;
 	padding-bottom: 0;
-	text-transform: uppercase;
+	text-transform: capitalize;
 }
 
 /* Main Content */
-#container-main-content {
+/* Skills */
+#container-skills {
 	margin-top: 60px;
 }
+.chart-title {
+	text-align: right;
+	font-size: 14px;
+	color: rgba(0, 0, 0, 0.5);
+	position: relative;
+    top: 52px;
+    right: 43px;
+    /*border-bottom: 1px solid rgba(9, 89, 105, 0.2);*/
+}
+#cms-chart-title {
+	right: 50px;
+}
+#bar-line h3 {
+	font-size: 13px;
+	color: rgba(0, 0, 0, 0.5);	
+	margin-top: 6px;
+}
+#design-col .col-4,
+#cms-col .col-4, 
+#db-col .col-4 {
+	padding-right: 0;
+	text-align: right;
+}
+#bar-title {
+	text-align: center;
+	font-size: 14px;
+	color: rgba(0, 0, 0, 0.5);
+	/* position: relative;
+    top: 47px; */
+    border-bottom: 1px solid rgba(9, 89, 105, 0.2);
+	padding-bottom: 9px;
+	width: 500px;
+}
+.bar-title {
+	text-align: center;
+	font-size: 11px;
+	color: rgba(0, 0, 0, 0.5);
+	margin-top: 10px;
+}
+#bar-css,
+#bar-less,
+#bar-sass,
+#bar-html,
+#bar-js,
+#bar-php,
+#bar-sql,
+#bar-java,
+#bar-c,
+#bar-misc,
+#bar-jquery,
+#bar-bootstrap {
+	position: relative;
+}
+#other-technologies {
+	margin-top: 45px;
+}
+#bar-line h2, 
+#other-technologies h2 {
+	color: rgba(0, 0, 0, 0.5);
+	font-size: 15px;
+	text-align: center;
+	margin-bottom: 12px;
+}
+#other-technologies ul {
+	list-style-type: none;
+}
+#other-technologies li {
+	display: inline;
+    padding-right: 15px;
+    background-color: rgba(9, 89, 105, 0.2);
+    padding: 9px;
+    border-radius: 10px;
+	margin-right: 3px;
+	color: rgba(0, 0, 0, 0.5);
+	font-size: 12px;
+}
+/* About */
+#container-about {
+
+}
+/* Portfolio */
+#container-portfolio {
+
+}
+/* Resume */
+#container-resume {
+
+}
+/* Contact */
+#container-contact {
+
+}
+.hr-row-separator {
+	border-top: 2px solid rgba(9, 89, 105, 0.2);
+	/*width: 200px;*/
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+.hr-container-separator {
+	border-top: 26px solid rgba(9, 89, 105, 0.2);
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+
 
 .blur {
    color: transparent;
