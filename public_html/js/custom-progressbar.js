@@ -1,5 +1,5 @@
 var barCss = new ProgressBar.Circle('#bar-css', {
-    color: '#bbb',
+    color: '#f5d891',
     // This has to be the same size as the maximum width to
     // prevent clipping
     strokeWidth: 5,
@@ -28,7 +28,7 @@ var barCss = new ProgressBar.Circle('#bar-css', {
 });
 
 var barLess = new ProgressBar.Circle('#bar-less', {
-    color: '#bbb',
+    color: '#e4a6b3',
     // This has to be the same size as the maximum width to
     // prevent clipping
     strokeWidth: 5,
@@ -57,7 +57,7 @@ var barLess = new ProgressBar.Circle('#bar-less', {
 });
 
 var barSass = new ProgressBar.Circle('#bar-sass', {
-    color: '#bbb',
+    color: '#a2c7e0',
     // This has to be the same size as the maximum width to
     // prevent clipping
     strokeWidth: 5,
@@ -68,7 +68,7 @@ var barSass = new ProgressBar.Circle('#bar-sass', {
     text: {
         autoStyleContainer: false
     },
-    from: { color: '#aaa', width: 5 },
+    from: { color: '#a2c7e0', width: 5 },
     to: { color: '#a2c7e0', width: 5 },
     // Set default step function for all animate calls
     step: function(state, circle) {
@@ -86,7 +86,7 @@ var barSass = new ProgressBar.Circle('#bar-sass', {
 });
 
 var barHtml = new ProgressBar.Circle('#bar-html', {
-    color: '#bbb',
+    color: '#cab2d6',
     // This has to be the same size as the maximum width to
     // prevent clipping
     strokeWidth: 5,
@@ -115,7 +115,7 @@ var barHtml = new ProgressBar.Circle('#bar-html', {
 });
 
 var barJs = new ProgressBar.Circle('#bar-js', {
-    color: '#bbb',
+    color: '#b6d6bd',
     // This has to be the same size as the maximum width to
     // prevent clipping
     strokeWidth: 5,
@@ -173,7 +173,7 @@ var barPhp = new ProgressBar.Circle('#bar-php', {
 });
 
 var barSql = new ProgressBar.Circle('#bar-sql', {
-    color: '#bbb',
+    color: '#efcab2',
     // This has to be the same size as the maximum width to
     // prevent clipping
     strokeWidth: 5,
@@ -202,7 +202,7 @@ var barSql = new ProgressBar.Circle('#bar-sql', {
 });
 
 var barJava = new ProgressBar.Circle('#bar-java', {
-    color: '#bbb',
+    color: '#bf9498',
     // This has to be the same size as the maximum width to
     // prevent clipping
     strokeWidth: 5,
@@ -231,7 +231,7 @@ var barJava = new ProgressBar.Circle('#bar-java', {
 });
 
 var barC = new ProgressBar.Circle('#bar-c', {
-    color: '#bbb',
+    color: '#819093',
     // This has to be the same size as the maximum width to
     // prevent clipping
     strokeWidth: 5,
@@ -242,8 +242,8 @@ var barC = new ProgressBar.Circle('#bar-c', {
     text: {
         autoStyleContainer: false
     },
-    from: { color: '#aaa', width: 5 },
-    to: { color: '#738677', width: 5 },
+    from: { color: '#819093', width: 5 },
+    to: { color: '#819093', width: 5 },
     // Set default step function for all animate calls
     step: function(state, circle) {
         circle.path.setAttribute('stroke', state.color);
@@ -260,7 +260,7 @@ var barC = new ProgressBar.Circle('#bar-c', {
 });
 
 var barJquery = new ProgressBar.Circle('#bar-jquery', {
-    color: '#bbb',
+    color: '#e6c7c7',
     // This has to be the same size as the maximum width to
     // prevent clipping
     strokeWidth: 5,
@@ -272,7 +272,7 @@ var barJquery = new ProgressBar.Circle('#bar-jquery', {
         autoStyleContainer: false
     },
     from: { color: '#eee', width: 5 },
-    to: { color: '#ddd', width: 5 },
+    to: { color: '#e6c7c7', width: 5 },
     // Set default step function for all animate calls
     step: function(state, circle) {
         circle.path.setAttribute('stroke', state.color);
@@ -289,7 +289,7 @@ var barJquery = new ProgressBar.Circle('#bar-jquery', {
 });
 
 var barBootstrap = new ProgressBar.Circle('#bar-bootstrap', {
-    color: '#bbb',
+    color: '#a0b4d1',
     // This has to be the same size as the maximum width to
     // prevent clipping
     strokeWidth: 5,
@@ -301,7 +301,7 @@ var barBootstrap = new ProgressBar.Circle('#bar-bootstrap', {
         autoStyleContainer: false
     },
     from: { color: '#eee', width: 5 },
-    to: { color: '#ddd', width: 5 },
+    to: { color: '#a0b4d1', width: 5 },
     // Set default step function for all animate calls
     step: function(state, circle) {
         circle.path.setAttribute('stroke', state.color);
@@ -345,14 +345,14 @@ barC.text.style.fontSize = fontSize;
 barJquery.text.style.fontSize = fontSize;
 barBootstrap.text.style.fontSize = fontSize;
 
-barCss.animate(0.95); 
-barLess.animate(0.9); 
-barSass.animate(0.3); 
-barHtml.animate(0.95); 
+barCss.animate(0.9); 
+barLess.animate(0.85); 
+barSass.animate(0.2); 
+barHtml.animate(0.9); 
 barJs.animate(0.8); 
-barPhp.animate(0.8); 
-barSql.animate(0.8); 
-barJava.animate(0.8); 
-barC.animate(0.2); 
-barJquery.animate(0.9); 
+barPhp.animate(0.7); 
+barSql.animate(0.75); 
+barJava.animate(0.7); 
+barC.animate(0.1); 
+barJquery.animate(0.8); 
 barBootstrap.animate(0.9); 

@@ -85,8 +85,9 @@
 
 /* Navigation */
 #container-navbar {
-	border-top: 1px solid rgba(9, 89, 105, 0.2);
-	border-bottom: 1px solid rgba(9, 89, 105, 0.2);
+	/*border-top: 1px solid rgba(9, 89, 105, 0.2);
+	border-bottom: 1px solid rgba(9, 89, 105, 0.2);*/
+	background-color: rgba(9, 89, 105, 0.2);
 }
 .navbar {
 	padding-top: 0;
@@ -110,13 +111,27 @@
 	margin-top: 60px;
 }
 .chart-title {
-	text-align: center;
+	text-align: right;
 	font-size: 14px;
 	color: rgba(0, 0, 0, 0.5);
 	position: relative;
-    top: 47px;
+    top: 52px;
+    right: 43px;
     /*border-bottom: 1px solid rgba(9, 89, 105, 0.2);*/
-    padding-bottom: 9px;
+}
+#cms-chart-title {
+	right: 50px;
+}
+#bar-line h3 {
+	font-size: 13px;
+	color: rgba(0, 0, 0, 0.5);	
+	margin-top: 6px;
+}
+#design-col .col-4,
+#cms-col .col-4, 
+#db-col .col-4 {
+	padding-right: 0;
+	text-align: right;
 }
 #bar-title {
 	text-align: center;
@@ -148,20 +163,28 @@
 #bar-bootstrap {
 	position: relative;
 }
-#bar-libraries .bar-title {
-	margin-bottom: 40px;
+#other-technologies {
+	margin-top: 45px;
 }
-#other-technologies h3 {
+#bar-line h2, 
+#other-technologies h2 {
+	color: rgba(0, 0, 0, 0.5);
+	font-size: 15px;
+	text-align: center;
+	margin-bottom: 12px;
 }
 #other-technologies ul {
 	list-style-type: none;
-	margin: 0 0 0 15px;
-	padding-top: 15px !important;
-	overflow: hidden;
 }
 #other-technologies li {
 	display: inline;
-	padding-right: 15px;
+    padding-right: 15px;
+    background-color: rgba(9, 89, 105, 0.2);
+    padding: 9px;
+    border-radius: 10px;
+	margin-right: 3px;
+	color: rgba(0, 0, 0, 0.5);
+	font-size: 12px;
 }
 /* About */
 #container-about {
@@ -179,7 +202,13 @@
 #container-contact {
 
 }
-.hr-container-separater {
+.hr-row-separator {
+	border-top: 2px solid rgba(9, 89, 105, 0.2);
+	/*width: 200px;*/
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+.hr-container-separator {
 	border-top: 26px solid rgba(9, 89, 105, 0.2);
 	margin-top: 60px;
 	margin-bottom: 60px;
