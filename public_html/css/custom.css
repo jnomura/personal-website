@@ -167,7 +167,8 @@
 	margin-top: 45px;
 }
 #bar-line h2, 
-#other-technologies h2 {
+#other-technologies h2,
+#container-about h2 {
 	color: rgba(0, 0, 0, 0.5);
 	font-size: 15px;
 	text-align: center;
@@ -187,9 +188,17 @@
 	font-size: 12px;
 }
 /* About */
-#container-about {
-
+#container-about a, 
+#container-about a:visited,
+#container-about a:hover,
+#container-about a:active {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	transition: 0.5s color ease;
+	margin: 4px 20px;
+	color: rgba(9, 89, 105, 0.8);
 }
+
 /* Portfolio */
 #container-portfolio {
 
@@ -216,12 +225,12 @@
 
 
 .blur {
-   color: transparent;
-   text-shadow: 0 0 7px rgba(23, 120, 139, 0.5);
-	 -webkit-transition: color 2s, text-shadow 2s;
-	 -moz-transition: color 2s, text-shadow 2s;
-	 -o-transition: color 2s, text-shadow 2s;
-	 transition: color 2s, text-shadow 2s;
+   	color: transparent;
+   	text-shadow: 0 0 7px rgba(23, 120, 139, 0.5);
+	-webkit-transition: color 2s, text-shadow 2s;
+	-moz-transition: color 2s, text-shadow 2s;
+	-o-transition: color 2s, text-shadow 2s;
+	transition: color 2s, text-shadow 2s;
 }
 .blur:hover,
 .blur-mobile {
